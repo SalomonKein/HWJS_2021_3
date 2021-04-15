@@ -1,0 +1,29 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+table{
+    border: gray solid 2px;
+    // width: 300px;
+    // height: 300px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    tr{
+        height: 15px;
+        border:gray solid 2px; ;
+        td{
+        width: 15px;
+        border:gray solid 2px; ;
+        // background-color: #ffffff;
+        
+        }
+    }
+   
+}
+.onClick{
+    background-color: #000000;
+}

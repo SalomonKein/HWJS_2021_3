@@ -1,0 +1,21 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+table {
+  border: gray solid 2px;
+  border-collapse: collapse;
+  border-spacing: 0; }
+  table tr {
+    height: 15px;
+    border: gray solid 2px; }
+    table tr td {
+      width: 15px;
+      border: gray solid 2px; }
+
+.onClick {
+  background-color: #000000; }
+
+/*# sourceMappingURL=index.css.map */
