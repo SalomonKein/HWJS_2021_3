@@ -23,19 +23,20 @@ class Table {
     } catch (error) {
       console.log(error);
     }
-
-
   }
 }
 
-body.onclick = function(event) {
-  if (event.target==body){
-    let selTd = document.querySelectorAll("td")
-    selTd.forEach(item=>{item.classList.toggle('onClick')})
-    // let selTable = document.querySelector("table")    
+body.onclick = function (event) {
+  if (event.target == body) {
+    let selTd = document.querySelectorAll("td");
+    selTd.forEach((item) => {
+      item.classList.toggle("onClick");
+    });
+    // let selTable = document.querySelector("table")
     // selTable.classList.toggle('onClick')
-
-  }else{
-  event.target.classList.toggle('onClick')}}
+  } else {
+    event.target.classList.toggle("onClick");
+  }
+};
 
 let myTable = new Table(30, 30);
