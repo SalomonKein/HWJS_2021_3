@@ -18,9 +18,16 @@ table{
         td{
         width: 15px;
         border:gray solid 2px; ;
-        // background-color: #ffffff;
+        background-color: inherit;
         
         }
+        .black{
+            background-color: #000000;
+        }
+        .white{
+            background-color: #ffffff;
+        }
+      
     }
    
 }

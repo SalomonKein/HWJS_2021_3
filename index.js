@@ -1,5 +1,6 @@
 let body = document.querySelector("body");
 
+
 class Table {
   constructor(row, column) {
     this.column = column;
@@ -25,18 +26,62 @@ class Table {
     }
   }
 }
+let myTable = new Table(30, 30);
 
 body.onclick = function (event) {
+  let selTable = document.querySelector("table")
+  let td = event.target.closest('td');
   if (event.target == body) {
-    let selTd = document.querySelectorAll("td");
-    selTd.forEach((item) => {
-      item.classList.toggle("onClick");
-    });
-    // let selTable = document.querySelector("table")
-    // selTable.classList.toggle('onClick')
-  } else {
-    event.target.classList.toggle("onClick");
+   selTable.classList.toggle('onClick')
+} else if(event.target == td) {
+  if(event.target.className == 'white') {
+    event.target.className = 'black';
+} else {
+  event.target.className = 'white';}
+
+//   event.target.classList.toggle("white");
+//   event.target.classList.toggle("black");
+    
   }
 };
 
-let myTable = new Table(30, 30);
+
+
+// body.onclick = function (event) {
+//   let selTable = document.querySelector("table")
+//   // let selTd = document.querySelectorAll("td");
+//   if (event.target == body) {
+//     // selTd.forEach((item) => {
+//     //   item.classList.toggle("onClick");
+//     // });    
+//     selTable.classList.toggle('onClick')
+//   // } else if(selTable.classList.contains('onClick')) {
+//   //   event.target.classList.toggle("onClick");
+//   //   selTable.classList.toggle('onClick')
+//   // 
+// // } else {
+// //   event.target.classList.toggle("white");
+// //   event.target.classList.toggle("black");
+    
+//   }
+// };
+
+// let selTable = document.querySelector("table");
+
+// body.addEventListener('click', colorTable);
+// function colorTable(){
+// selTable.classList.toggle('onClick')	
+// colorTd(event.target)
+// };
+// // selTable.addEventListener('click', colorTd);
+// function colorTd(){
+//   let td = event.target.closest('td');
+// 	if (td) { 
+// 		td.classList.toggle("onClick");
+//     td.stopPropagation();
+// 	}
+  
+// }
+
+
+

@@ -13,7 +13,12 @@ table {
     border: gray solid 2px; }
     table tr td {
       width: 15px;
-      border: gray solid 2px; }
+      border: gray solid 2px;
+      background-color: inherit; }
+    table tr .black {
+      background-color: #000000; }
+    table tr .white {
+      background-color: #ffffff; }
 
 .onClick {
   background-color: #000000; }
