@@ -18,19 +18,21 @@ table{
         td{
         width: 15px;
         border:gray solid 2px; ;
-        background-color: inherit;
+        background-color: #ffffff;
         
         }
-        .black{
-            background-color: #000000;
-        }
-        .white{
-            background-color: #ffffff;
-        }
+        // .black{
+        //     background-color: #000000;
+        // }
+        // .white{
+        //     background-color: #ffffff;
+        // }
       
     }
    
 }
 .onClick{
-    background-color: #000000;
+    //background-color: #000000;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
 }
